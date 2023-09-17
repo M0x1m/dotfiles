@@ -25,6 +25,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id setxkbmap -layout us,ru -option grp:shifts_toggle,compose:caps
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
