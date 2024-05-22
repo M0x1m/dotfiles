@@ -42,6 +42,16 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka" :foundry "UKWN" :slant normal :weight normal :height 200 :width normal)))))
 
+(defun set-font (newfont)
+  (interactive "sFont: ")
+  (eval
+   `(custom-set-faces
+     '(default ((t
+                 (:family, newfont, :foundry "UKWN" :slant normal :weight normal :height 200 :width normal)
+                 )))
+     ))
+  )
+
 (global-set-key (kbd "C-M-]") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-M-[") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c j") 'mc/skip-to-next-like-this)
