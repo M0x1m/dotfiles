@@ -11,3 +11,6 @@ set expandtab
 syntax on
 colorscheme habamax
 cnoreabbrev rt %s/\s\+$//
+
+set guifont=ubuntu\ mono\ 18
+set guioptions=
