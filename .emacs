@@ -6,9 +6,11 @@
 (package-install 'multiple-cursors)
 (package-install 'company)
 (package-install 'smex)
+
 (require 'multiple-cursors)
 (require 'company)
 (require 'smex)
+(require 'move-text)
 
 (menu-bar-mode 0)
 (column-number-mode 1)
@@ -61,5 +63,11 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-o") 'join-line)
 (global-set-key (kbd "M-s") 'delete-trailing-whitespace)
+(global-set-key (kbd "M-<up>") 'move-text-up)
+(global-set-key (kbd "M-<down>") 'move-text-down)
+(global-set-key (kbd "M-s") 'delete-trailing-whitespace)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 (put 'scroll-left 'disabled nil)
 (setq confirm-kill-emacs 'y-or-n-p)
+
+(global-set-key (kbd "M-RET") 'magit)
