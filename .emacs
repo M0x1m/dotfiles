@@ -7,11 +7,15 @@
 (package-install 'company)
 (package-install 'smex)
 
+(add-to-list 'default-frame-alist `(font . "Iosevka-20"))
+
 (require 'multiple-cursors)
 (require 'company)
 (require 'smex)
 (require 'move-text)
 
+(ido-mode)
+(ido-everywhere)
 (menu-bar-mode 0)
 (column-number-mode 1)
 (size-indication-mode 1)
@@ -42,7 +46,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Iosevka" :foundry "UKWN" :slant normal :weight normal :height 200 :width normal)))))
+ )
 
 (defun set-font (newfont)
   (interactive "sFont: ")
