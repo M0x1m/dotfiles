@@ -1,3 +1,4 @@
+source $VIMRUNTIME/vimrc_example.vim
 set nu
 set relativenumber
 set ai
