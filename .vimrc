@@ -10,7 +10,8 @@ set smartindent
 set smartcase
 set expandtab
 syntax on
-colorscheme habamax
+"colorscheme desert
+colorscheme koehler
 cnoreabbrev rt %s/\s\+$//
 
 set guifont=ubuntu\ mono\ 18

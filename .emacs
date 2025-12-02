@@ -75,3 +75,4 @@
 (setq confirm-kill-emacs 'y-or-n-p)
 
 (global-set-key (kbd "M-RET") 'magit)
+(global-set-key (kbd "C-x C-g") 'find-file-at-point)
