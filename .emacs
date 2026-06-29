@@ -73,6 +73,7 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (put 'scroll-left 'disabled nil)
 (setq confirm-kill-emacs 'y-or-n-p)
+(setq dired-dwim-target t)
 
 (global-set-key (kbd "M-RET") 'magit)
 (global-set-key (kbd "C-x C-g") 'find-file-at-point)
