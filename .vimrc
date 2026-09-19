@@ -9,6 +9,7 @@ set smarttab
 set smartindent
 set smartcase
 set expandtab
+set nobackup
 syntax on
 "colorscheme desert
 colorscheme koehler
